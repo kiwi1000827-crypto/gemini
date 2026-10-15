@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 18 系列機型差異比較</title>
+    <style>
+        :root {
+            --primary-color: #0071e3;
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+            --text-color: #1d1d1f;
+            --gray-text: #86868b;
+            --border-color: #d2d2d7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: var(--gray-text);
+            font-size: 1.2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card.highlight {
+            border: 2px solid var(--primary-color);
+        }
+        .badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .specs-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .specs-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--bg-color);
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .specs-list li span.label {
+            color: var(--gray-text);
+        }
+        .specs-list li span.value {
+            font-weight: 600;
+            text-align: right;
+        }
+        .note {
+            font-size: 0.85rem;
+            color: var(--gray-text);
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>iPhone 18 系列機型差異比較</h1>
+        <p>探索 Apple 最新世代各款機型的規格、定位與亮點</p>
+    </header>
+
+    <div class="grid">
+        <!-- 標準版 / 預期春季 -->
+        <div class="card">
+            <h2>iPhone 18</h2>
+            <p>適合追求穩定日常使用、高性價比的消費者。</p>
+            <ul class="specs-list">
+                <li><span class="label">螢幕尺寸</span><span class="value">6.3 吋</span></li>
+                <li><span class="label">處理器</span><span class="value">A20 晶片</span></li>
+                <li><span class="label">記憶體</span><span class="value">約 8GB - 9GB</span></li>
+                <li><span class="label">相機系統</span><span class="value">雙鏡頭相機</span></li>
+                <li><span class="label">上市時程</span><span class="value">預計 2027 年春季</span></li>
+            </ul>
+            <div class="note">* 與 iPhone 18e 共享部分零組件，拉近標準版與入門款的差距。</div>
+        </div>
+
+        <!-- Pro 版 -->
+        <div class="card highlight">
+            <span class="badge">專業首選</span>
+            <h2>iPhone 18 Pro</h2>
+            <p>專為追求頂級效能、專業級攝影與 AI 深度應用的用戶打造。</p>
+            <ul class="specs-list">
+                <li><span class="label">螢幕尺寸</span><span class="value">6.3 吋 (縮小動態島)</span></li>
+                <li><span class="label">處理器</span><span class="value">A20 Pro (2nm 製程)</span></li>
+                <li><span class="label">記憶體</span><span class="value">12GB RAM</span></li>
+                <li><span class="label">相機系統</span><span class="value">4800萬像素主鏡頭 (具備可變光圈)</span></li>
+                <li><span class="label">上市時程</span><span class="value">已於 2026 年秋季上市</span></li>
+            </ul>
+            <div class="note">* 支援相機手動光圈、快門控制與 C2 數據機。</div>
+        </div>
+
+        <!-- Pro Max 版 -->
+        <div class="card">
+            <h2>iPhone 18 Pro Max</h2>
+            <p>系列中螢幕最大、續航力最強的旗艦代表。</p>
+            <ul class="specs-list">
+                <li><span class="label">螢幕尺寸</span><span class="value">超大螢幕旗艦規格</span></li>
+                <li><span class="label">處理器</span><span class="value">A20 Pro (2nm 製程)</span></li>
+                <li><span class="label">記憶體</span><span class="value">12GB RAM</span></li>
+                <li><span class="label">相機系統</span><span class="value">頂級三鏡頭 + 可變光圈</span></li>
+                <li><span class="label">上市時程</span><span class="value">已於 2026 年秋季上市</span></li>
+            </ul>
+            <div class="note">* 擁有最長的電池續航力，適合重度影音與手遊玩家。</div>
+        </div>
+
+        <!-- 摺疊機 (iPhone Duo) -->
+        <div class="card">
+            <span class="badge" style="background: #333;">全新型態</span>
+            <h2>iPhone Duo (摺疊機)</h2>
+            <p>Apple 首次跨足摺疊螢幕市場的劃時代創新產品。</p>
+            <ul class="specs-list">
+                <li><span class="label">產品定位</span><span class="value">頂級奢華旗艦</span></li>
+                <li><span class="label">外觀設計</span><span class="value">雙螢幕摺疊態樣</span></li>
+                <li><span class="label">核心亮點</span><span class="value">全新鉸鏈與大螢幕多工體驗</span></li>
+                <li><span class="label">上市時程</span><span class="value">2026 年 10 月下旬</span></li>
+            </ul>
+            <div class="note">* 售價定位較高，主打完全不同的行動載具體驗。</div>
